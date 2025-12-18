@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de precisión - Miga Maestra</title>
+    <title>Tazas a la Medida ⚖️</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
@@ -14,63 +14,77 @@
         .result-box { background-color: #FFF8DC; border-left: 4px solid #A0522D; padding: 0.75rem; border-radius: 0.5rem; display: flex; justify-content: space-between; margin-top: 0.4rem; font-size: 0.85rem; }
         .ad-space { background-color: #f3f4f6; color: #9ca3af; font-size: 10px; text-align: center; padding: 12px; border-radius: 8px; border: 2px dashed #e5e7eb; margin: 15px 0; font-weight: bold; text-transform: uppercase; }
         .premium-overlay { position: absolute; inset: 0; background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(3px); z-index: 10; cursor: not-allowed; }
-        #payment-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); align-items: center; justify-content: center; z-index: 100; backdrop-filter: blur(4px); }
+        #payment-modal, #share-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); align-items: center; justify-content: center; z-index: 100; backdrop-filter: blur(4px); }
     </style>
 </head>
 <body class="p-4 flex flex-col items-center">
 
     <div class="w-full max-w-md">
-        <!-- PUBLICIDAD -->
+        <!-- PUBLICIDAD SUPERIOR -->
         <div class="ad-space">Espacio Publicitario (AdSense)</div>
 
         <header class="text-center mb-6 pt-2">
-            <h1 class="text-3xl font-bold text-[#A0522D]">Tazas a tu medida ⚖️</h1>
-            <p class="text-gray-500 italic text-sm">"Calculadora de precisión para panadería y repostería"</p>
+            <h1 class="text-3xl font-bold text-[#A0522D]">Tazas a la Medida ⚖️</h1>
+            <p class="text-gray-500 italic text-sm px-4">Calculadora de precisión para la Cocina, Repostería y Panadería</p>
         </header>
 
         <!-- CONVERSOR -->
         <div class="card">
             <h2 class="text-lg font-bold mb-4 flex items-center text-[#A0522D]">
-                <span class="mr-2">🍞</span> Conversor de Ingredientes
+                <span class="mr-2">🍳</span> Conversor Universal
             </h2>
             <div class="space-y-4">
                 <div>
                     <label class="text-[10px] font-bold text-gray-400 uppercase ml-1">Selecciona Ingrediente</label>
                     <select id="sel-ing" class="miga-input">
                         <option value="" disabled selected>-- Elige un ingrediente --</option>
-                        <optgroup label="Harinas y Sólidos">
+                        
+                        <optgroup label="🥖 Panadería y Repostería">
                             <option value="120">Harina de Trigo (Todo uso)</option>
-                            <option value="130">Harina de Fuerza (Panadería)</option>
+                            <option value="130">Harina de Fuerza</option>
                             <option value="200">Azúcar Granulada</option>
                             <option value="160">Azúcar Glass / Impalpable</option>
-                            <option value="150">Avena en Hojuelas</option>
-                            <option value="125">Maicena (Almidón)</option>
-                            <option value="100">Coco Rallado</option>
                             <option value="110">Cacao en Polvo</option>
+                            <option value="150">Levadura Seca</option>
+                            <option value="190">Polvo de Hornear</option>
                         </optgroup>
-                        <optgroup label="Ingredientes de Precisión (Sal/Levadura)">
-                            <option value="280">Sal Fina</option>
-                            <option value="150">Levadura Seca Granulada</option>
-                            <option value="240">Levadura Fresca (Prensada)</option>
-                            <option value="190">Polvo de Hornear (Royal)</option>
+
+                        <optgroup label="🇻🇪 Sabor Venezolano">
+                            <option value="155">Harina PAN (Maíz Precocida)</option>
+                            <option value="180">Papelón Rallado</option>
+                            <option value="100">Queso Llanero Rallado</option>
+                            <option value="240">Suero de Leche</option>
+                            <option value="120">Almidón de Yuca</option>
                         </optgroup>
-                        <optgroup label="Grasas (Sólidas/Cremosas)">
-                            <option value="227">Mantequilla (Sólida)</option>
-                            <option value="205">Margarina (Cremosa)</option>
-                            <option value="215">Manteca Vegetal</option>
+
+                        <optgroup label="🍚 Arroz, Pastas y Granos">
+                            <option value="185">Arroz Blanco (Grano largo)</option>
+                            <option value="200">Arroz para Risotto (Arboreo)</option>
+                            <option value="90">Pasta Corta (Penne/Tornillo)</option>
+                            <option value="210">Caraotas Negras / Rojas (Secas)</option>
+                            <option value="205">Lentejas (Secas)</option>
+                            <option value="195">Garbanzos (Secos)</option>
+                            <option value="170">Quinoa (Seca)</option>
+                            <option value="175">Cuscús</option>
                         </optgroup>
-                        <optgroup label="Líquidos y Aceites">
-                            <option value="236.59">Agua / Leche</option>
-                            <option value="218">Aceite Vegetal</option>
-                            <option value="210">Aceite de Oliva</option>
+
+                        <optgroup label="🥛 Lácteos y Líquidos">
+                            <option value="236">Agua / Leche</option>
+                            <option value="218">Aceite Vegetal / Oliva</option>
                             <option value="245">Yogur Natural</option>
-                            <option value="210">Huevo Batido (Aprox)</option>
-                        </optgroup>
-                        <optgroup label="Viscosos y Dulces">
-                            <option value="340">Miel / Jarabe de Maíz</option>
-                            <option value="300">Leche Condensada</option>
-                            <option value="280">Dulce de Leche / Arequipe</option>
                             <option value="250">Crema de Leche / Nata</option>
+                            <option value="280">Salsa de Tomate / Passata</option>
+                            <option value="260">Salsa de Soja</option>
+                            <option value="240">Vinagre</option>
+                        </optgroup>
+
+                        <optgroup label="🧂 Condimentos y Quesos">
+                            <option value="280">Sal Fina</option>
+                            <option value="80">Queso Parmesano Rallado</option>
+                            <option value="115">Pan Rallado</option>
+                            <option value="100">Orégano Seco</option>
+                            <option value="140">Comino / Pimentón en polvo</option>
+                            <option value="340">Miel / Jarabe</option>
                         </optgroup>
                     </select>
                 </div>
@@ -78,14 +92,14 @@
                 <div class="flex gap-2">
                     <div class="flex-1">
                         <label class="text-[10px] font-bold text-gray-400 uppercase ml-1">Cantidad</label>
-                        <input type="number" id="num-val" class="miga-input" placeholder="0">
+                        <input type="number" id="num-val" class="miga-input" placeholder="0" step="any">
                     </div>
                     <div class="w-1/3">
                         <label class="text-[10px] font-bold text-gray-400 uppercase ml-1">Unidad</label>
                         <select id="sel-unit" class="miga-input">
                             <option value="cups">Tazas</option>
-                            <option value="tbsp">Cucharadas</option>
-                            <option value="tsp">Cucharaditas</option>
+                            <option value="tbsp">Cdas</option>
+                            <option value="tsp">Cdtas</option>
                             <option value="grams">Gramos</option>
                             <option value="ml">Mililitros</option>
                         </select>
@@ -93,16 +107,20 @@
                 </div>
 
                 <div id="res-area" class="mt-4 pt-2 border-t border-gray-100 text-center text-gray-400 text-xs">
-                    Resultados técnicos para panaderos y reposteros
+                    Resultados precisos para tus recetas
                 </div>
+
+                <button onclick="document.getElementById('share-modal').style.display='flex'" class="w-full mt-4 flex items-center justify-center gap-2 bg-white border-2 border-[#A0522D] text-[#A0522D] py-3 rounded-xl font-bold text-sm hover:bg-[#FFF8DC] transition-all active:scale-95">
+                    <span>📲</span> Compartir Cálculo
+                </button>
             </div>
         </div>
 
-        <!-- ESTIMADOR DE COSTOS (VISTA PREVIA GRISADA) -->
+        <!-- ESTIMADOR DE COSTOS (BLOQUEADO) -->
         <div class="card bg-gray-50 opacity-60">
             <div class="premium-overlay"></div>
             <h2 class="text-lg font-bold mb-4 flex items-center text-gray-400">
-                <span class="mr-2">💸</span> Estimador de Costos (PRO)
+                <span class="mr-2">💸</span> Calculadora de Costos (PRO)
             </h2>
             <div class="flex gap-2">
                 <input type="text" class="miga-input" placeholder="Tasa BCV del día" disabled>
@@ -113,34 +131,30 @@
         <!-- SECCIÓN PREMIUM -->
         <div class="card border-2 border-yellow-500 bg-gradient-to-br from-white to-yellow-50">
             <h2 class="text-xl font-black mb-3 text-[#A0522D] flex items-center justify-between">
-                Sube de Nivel PRO <span>💎</span>
+                Acceso PRO <span>💎</span>
             </h2>
             <div class="text-[12px] space-y-2 mb-5 text-gray-700">
-                <p>✨ <b>Adiós a los anuncios:</b> Interfaz limpia para trabajar.</p>
-                <p>📈 <b>Costos Reales:</b> Calculadora con tasa BCV del día.</p>
-                <p>💾 <b>Mis Fórmulas:</b> Guarda tus mezclas favoritas para siempre.</p>
+                <p>✨ <b>Sin Publicidad:</b> Experiencia limpia y rápida.</p>
+                <p>📈 <b>Gestión de Costos:</b> Convierte gramos en dinero real.</p>
+                <p>📙 <b>Nube:</b> Guarda tus recetas y ábrelas donde sea.</p>
             </div>
             
-            <button onclick="openPremium()" class="w-full bg-[#A0522D] text-white py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-[#8B4513] transition-colors">
-                Comprar Ahora
+            <button onclick="document.getElementById('payment-modal').style.display='flex'" class="w-full bg-[#A0522D] text-white py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-[#8B4513] transition-colors">
+                Activar Plan Pro
             </button>
         </div>
 
-        <div class="ad-space">Espacio Publicitario (AdSense)</div>
-
         <footer class="text-center text-gray-400 text-[10px] mt-4 mb-10">
-            Miga Maestra © 2025 - Precisión para tu taller
+            Tazas a la Medida © 2025 - Cocina de Precisión
         </footer>
     </div>
 
-    <!-- MODAL DE PAGO Y REGISTRO -->
+    <!-- MODAL DE PAGO -->
     <div id="payment-modal">
-        <div class="bg-white p-6 rounded-3xl w-full max-w-sm shadow-2xl mx-4 relative">
-            <button onclick="closePremium()" class="absolute top-4 right-4 text-gray-400 text-xl font-bold">&times;</button>
-            
-            <h3 class="text-xl font-bold text-center mb-1">Activa tu cuenta PRO</h3>
-            <p class="text-[11px] text-gray-500 text-center mb-6">Elige tu método de pago y regístrate para acceder siempre</p>
-
+        <div class="bg-white p-6 rounded-3xl w-full max-w-sm shadow-2xl mx-4 relative text-center">
+            <button onclick="document.getElementById('payment-modal').style.display='none'" class="absolute top-4 right-4 text-gray-400 text-xl font-bold">&times;</button>
+            <h3 class="text-xl font-bold mb-6 text-[#A0522D]">Activar Funciones PRO</h3>
+            <p class="text-xs text-gray-500 mb-6">Apoya el proyecto y desbloquea el gestor de costos:</p>
             <div class="grid grid-cols-2 gap-3 mb-6">
                 <a href="https://www.paypal.me/rhav93" target="_blank" class="flex flex-col items-center p-3 border-2 border-blue-100 rounded-2xl hover:bg-blue-50 transition-colors">
                     <span class="text-xl mb-1">💳</span>
@@ -151,28 +165,35 @@
                     <span class="text-[10px] font-bold text-yellow-600">Binance Pay</span>
                 </div>
             </div>
+            <p class="text-[10px] text-gray-400 italic">Al pagar, envía tu comprobante para habilitar tu cuenta.</p>
+        </div>
+    </div>
 
-            <div class="border-t border-gray-100 pt-6">
-                <h4 class="text-xs font-bold text-gray-400 uppercase mb-3 text-center tracking-widest">Registra tu Acceso</h4>
-                <div class="space-y-3">
-                    <input type="email" id="pro-email" class="miga-input text-sm" placeholder="Tu correo electrónico">
-                    <input type="password" id="pro-pass" class="miga-input text-sm" placeholder="Crea tu contraseña">
-                    <button class="w-full bg-black text-white py-3 rounded-xl font-bold text-sm hover:bg-gray-800 transition-colors">Confirmar y Activar PRO</button>
-                </div>
-                <p class="text-[9px] text-gray-400 text-center mt-3">Tus datos estarán seguros y tus funciones se activarán tras el pago.</p>
+    <!-- MODAL DE COMPARTIR -->
+    <div id="share-modal">
+        <div class="bg-white p-6 rounded-3xl w-full max-w-sm shadow-2xl mx-4 relative">
+            <button onclick="document.getElementById('share-modal').style.display='none'" class="absolute top-4 right-4 text-gray-400 text-xl font-bold">&times;</button>
+            <h3 class="text-xl font-bold text-center mb-6 text-[#A0522D]">Enviar cálculo</h3>
+            <div class="space-y-4">
+                <button onclick="shareAction('whatsapp')" class="w-full flex items-center justify-between p-4 bg-[#25D366] text-white rounded-2xl font-bold active:scale-95 transition-transform">
+                    <span>WhatsApp</span>
+                    <span>💬</span>
+                </button>
+                <button onclick="shareAction('copy')" class="w-full flex items-center justify-between p-4 bg-slate-800 text-white rounded-2xl font-bold active:scale-95 transition-transform">
+                    <span>Copiar Texto</span>
+                    <span>📋</span>
+                </button>
             </div>
         </div>
     </div>
 
     <script>
-        const modal = document.getElementById('payment-modal');
         const ing = document.getElementById('sel-ing');
         const val = document.getElementById('num-val');
         const unit = document.getElementById('sel-unit');
         const res = document.getElementById('res-area');
 
-        function openPremium() { modal.style.display = 'flex'; }
-        function closePremium() { modal.style.display = 'none'; }
+        let sharedMsg = "";
 
         function copyBinance() {
             const id = "1073665393";
@@ -182,16 +203,18 @@
             el.select();
             document.execCommand('copy');
             document.body.removeChild(el);
-            alert("ID de Binance Copiado: " + id + "\nRealiza tu pago y regístrate para activar tu cuenta.");
+            alert("ID de Binance Copiado: " + id);
         }
 
         function calculate() {
             const density = parseFloat(ing.value);
             const amount = parseFloat(val.value);
             const u = unit.value;
+            const ingName = ing.options[ing.selectedIndex]?.text || "";
 
             if (!density || isNaN(amount) || amount <= 0) {
                 res.innerHTML = '<p class="text-center text-gray-400 text-xs italic">Ingresa una cantidad y selecciona el ingrediente</p>';
+                sharedMsg = "";
                 return;
             }
 
@@ -208,14 +231,32 @@
             const tsp = cups * 48;
 
             res.innerHTML = `
-                <div class="result-box"><span>Tazas</span><b>${cups.toFixed(2)}</b></div>
+                <div class="result-box"><span>Tazas</span><b>${cups.toLocaleString('es-ES', {minimumFractionDigits: 1, maximumFractionDigits: 2})}</b></div>
                 <div class="result-box"><span>Gramos</span><b>${grams.toFixed(1)} g</b></div>
                 <div class="result-box"><span>Mililitros</span><b>${ml.toFixed(0)} ml</b></div>
                 <div class="grid grid-cols-2 gap-2 mt-1">
-                    <div class="result-box mt-0"><span>Cucharadas</span><b>${tbsp.toFixed(1)}</b></div>
-                    <div class="result-box mt-0"><span>Cucharaditas</span><b>${tsp.toFixed(1)}</b></div>
+                    <div class="result-box mt-0"><span>Cdas</span><b>${tbsp.toFixed(1)}</b></div>
+                    <div class="result-box mt-0"><span>Cdtas</span><b>${tsp.toFixed(1)}</b></div>
                 </div>
             `;
+
+            sharedMsg = `⚖️ Cálculo: Tazas a la Medida\n--------------------------\n🛒 Ingrediente: ${ingName}\n📝 Medida inicial: ${amount} ${u}\n\nEQUIVALENCIAS:\n☕ Tazas: ${cups.toFixed(2)}\n⚖️ Gramos: ${grams.toFixed(1)}g\n💧 Mililitros: ${ml.toFixed(0)}ml\n🥄 Cucharadas: ${tbsp.toFixed(1)}\n--------------------------\n¡Hecho con precisión! 🥯`;
+        }
+
+        function shareAction(p) {
+            if(!sharedMsg) { alert("¡Realiza un cálculo primero!"); return; }
+            if(p === 'whatsapp') {
+                window.open(`https://wa.me/?text=${encodeURIComponent(sharedMsg)}`, '_blank');
+            } else {
+                const el = document.createElement('textarea');
+                el.value = sharedMsg;
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand('copy');
+                document.body.removeChild(el);
+                alert("Texto copiado con éxito.");
+            }
+            document.getElementById('share-modal').style.display='none';
         }
 
         ing.addEventListener('change', calculate);
