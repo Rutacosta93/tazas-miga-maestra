@@ -1,37 +1,44 @@
-Miga Maestra Pro ⚖️🍞
+Miga Maestra: Calculadora de Precisión para Panadería
 
-Miga Maestra es una herramienta web de precisión diseñada por y para panaderos artesanales. Su objetivo es eliminar la incertidumbre al medir ingredientes, permitiendo convertir medidas de volumen (tazas, cucharadas) a peso (gramos) con exactitud técnica.
+Miga Maestra es una herramienta web de alta precisión diseñada para profesionales de la panadería y repostería. Su algoritmo utiliza densidades específicas por ingrediente para garantizar conversiones exactas entre peso y volumen, eliminando el margen de error en las recetas.
 
-"Porque en la panadería, la precisión es la diferencia entre un pan gomoso y una miga perfecta."
+🚀 Características Principales
 
-✨ Características Principales
+Conversión Técnica: Algoritmos basados en la densidad real de cada ingrediente (harinas, azúcares, grasas y líquidos).
 
-Conversor Inteligente: Base de datos de densidades para harinas (todo uso, fuerza), leudantes (levadura fresca/seca), grasas (aceite, mantequilla) y líquidos.
+Interfaz Móvil: Optimizada para su uso en entornos de producción (cocinas y obradores).
 
-Gestión de Recetas: Guarda tus propias equivalencias personalizadas en la nube gracias a la integración con Firebase.
+Precisión Profesional: Resultados ajustados hasta el primer decimal para asegurar la repetibilidad de la receta.
 
-Optimizado para Cocina: Interfaz limpia y responsiva, diseñada para usarse cómodamente desde el celular mientras tienes las manos en la masa.
+💎 Modalidad Premium (Miga Maestra PRO)
 
-Sección Premium: Preparado para funciones avanzadas como cálculo de costos y guías técnicas.
+Para los usuarios que requieren capacidades avanzadas, ofrecemos una suscripción PRO por un pago único de $4.99 USD.
 
-🥖 El Secreto de la Miga
+Beneficios de la suscripción:
 
-Esta herramienta fue inspirada por la receta del Pan de Sartén. Para lograr que el pan infle y no quede gomoso, recordamos siempre el mantra de Miga Maestra: Fuego Medio-Alto y medición exacta de la harina.
+Historial de Conversiones: Guarda tus cálculos recientes para acceder a ellos rápidamente.
 
-🛠️ Tecnologías Utilizadas
+Personalización de Ingredientes: Añade tus propios ingredientes y define sus densidades personalizadas.
 
-Frontend: HTML5, CSS3 y Tailwind CSS para un diseño moderno y rápido.
+Exportación a PDF: Genera fichas técnicas de tus conversiones para compartirlas con tu equipo.
 
-Lógica: JavaScript (Vanilla JS) para cálculos en tiempo real.
+Sin Publicidad: Una interfaz 100% limpia para máxima concentración.
 
-Base de Datos: Google Firebase (Firestore & Auth) para el guardado seguro de datos.
+🛠️ Cómo Funciona
 
-🚀 Cómo instalar
+La precisión radica en la fórmula masa = volumen × densidad. Mientras que una taza de agua pesa ~236g, una de harina de fuerza pesa ~125g. Miga Maestra realiza este cálculo de forma automática según la base de datos técnica integrada.
 
-Clona este repositorio.
+💻 Instalación y Desarrollo
 
-Abre el archivo index.html en tu navegador.
+Clona el repositorio:
 
-¡Empieza a hornear con precisión!
+git clone [https://github.com/tu-usuario/miga-maestra.git](https://github.com/tu-usuario/miga-maestra.git)
 
-Desarrollado con pasión por la panadería artesanal. 🥨
+
+Ejecuta el archivo index.html. No requiere dependencias externas pesadas ni configuración de servidor.
+
+📊 Propósito
+
+Transformar la panadería artesanal en una disciplina científica, permitiendo que cualquier persona pueda replicar resultados profesionales sin importar el sistema de medida que utilice su fuente original.
+
+Miga Maestra: Precisión en cada gramo.
