@@ -1,0 +1,37 @@
+Miga Maestra Pro ⚖️🍞
+
+Miga Maestra es una herramienta web de precisión diseñada por y para panaderos artesanales. Su objetivo es eliminar la incertidumbre al medir ingredientes, permitiendo convertir medidas de volumen (tazas, cucharadas) a peso (gramos) con exactitud técnica.
+
+"Porque en la panadería, la precisión es la diferencia entre un pan gomoso y una miga perfecta."
+
+✨ Características Principales
+
+Conversor Inteligente: Base de datos de densidades para harinas (todo uso, fuerza), leudantes (levadura fresca/seca), grasas (aceite, mantequilla) y líquidos.
+
+Gestión de Recetas: Guarda tus propias equivalencias personalizadas en la nube gracias a la integración con Firebase.
+
+Optimizado para Cocina: Interfaz limpia y responsiva, diseñada para usarse cómodamente desde el celular mientras tienes las manos en la masa.
+
+Sección Premium: Preparado para funciones avanzadas como cálculo de costos y guías técnicas.
+
+🥖 El Secreto de la Miga
+
+Esta herramienta fue inspirada por la receta del Pan de Sartén. Para lograr que el pan infle y no quede gomoso, recordamos siempre el mantra de Miga Maestra: Fuego Medio-Alto y medición exacta de la harina.
+
+🛠️ Tecnologías Utilizadas
+
+Frontend: HTML5, CSS3 y Tailwind CSS para un diseño moderno y rápido.
+
+Lógica: JavaScript (Vanilla JS) para cálculos en tiempo real.
+
+Base de Datos: Google Firebase (Firestore & Auth) para el guardado seguro de datos.
+
+🚀 Cómo instalar
+
+Clona este repositorio.
+
+Abre el archivo index.html en tu navegador.
+
+¡Empieza a hornear con precisión!
+
+Desarrollado con pasión por la panadería artesanal. 🥨
