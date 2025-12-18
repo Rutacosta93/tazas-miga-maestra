@@ -1,23 +1,45 @@
-🍞 Miga Maestra
+🍞 Miga Maestra - Calculadora de Precisión
 
-Miga Maestra es una herramienta esencial para panaderos caseros y profesionales que buscan precisión en sus recetas. Este repositorio contiene una calculadora de conversiones técnica y una guía de técnicas de panificación.
+Miga Maestra es una herramienta web técnica diseñada para panaderos y cocineros que requieren conversiones exactas entre diferentes unidades de medida (tazas, gramos, mililitros, cucharadas) basadas en la densidad de los ingredientes.
 
-🚀 Características principales
+🎯 Objetivo del Proyecto
 
-Calculadora de Precisión: Convierte instantáneamente entre tazas, gramos y mililitros ajustándose a la densidad del ingrediente (harina, azúcar, agua, etc.).
+El objetivo principal es eliminar la imprecisión de las medidas de "volumen" (tazas) al convertirlas automáticamente a "peso" (gramos), asegurando que las recetas sean replicables y consistentes.
 
-Interfaz Responsiva: Diseñada para usarse cómodamente desde el móvil mientras estás en la cocina.
+🚀 Funcionalidades Actuales
 
-Tips de Horneado: Consejos técnicos para mejorar la textura de tus panes.
+Conversión Dinámica: Cambia entre Tazas, Gramos, ML y Cucharadas en tiempo real.
 
-📂 Archivos del Proyecto
+Base de Datos de Densidades: Incluye parámetros específicos para:
 
-index.html: La aplicación web principal (Calculadora).
+Harina (Trigo y Fuerza)
 
-README.md: Documentación y guías del proyecto.
+Azúcar (Blanca y Glass)
 
-🛠️ Instalación y Uso
+Líquidos (Agua, Leche, Aceite)
 
-No requiere instalación. Simplemente abre el archivo index.html en cualquier navegador moderno.
+Otros (Mantequilla, Levadura seca)
 
-Desarrollado para amantes de la buena miga.
+Diseño Mobile-First: Optimizado para dispositivos móviles para uso directo en cocina.
+
+🛠️ Tecnologías Utilizadas
+
+HTML5 & CSS3
+
+Tailwind CSS: Para el diseño visual y la responsividad.
+
+JavaScript (Vanilla): Lógica de cálculo y manipulación del DOM sin dependencias externas.
+
+📂 Estructura de Archivos
+
+index.html: Contiene la estructura, los estilos embebidos (vía Tailwind) y la lógica de programación.
+
+📈 Próximas Mejoras (Roadmap)
+
+[ ] Soporte para modo oscuro.
+
+[ ] Opción de escalado de recetas (multiplicador de porciones).
+
+[ ] Versión Premium: Implementación de persistencia de datos y biblioteca de recetas técnicas.
+
+Este proyecto es de código abierto y enfocado en la precisión gastronómica.
